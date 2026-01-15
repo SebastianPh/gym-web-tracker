@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Web Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+   <main>
+    <h2>Registro / Login</h2>
+
+    <form id="registerForm">
+        <h3>Registro</h3>
+
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="number" id="age" placeholder="Edad" required>
+        <input type="number" id="weight" placeholder="Peso (kg)" required>
+        <input type="number" id="height" placeholder="Estatura (cm)" required>
+
+        <select id="goal" required>
+            <option value="">Meta</option>
+            <option value="muscle">Ganar músculo</option>
+            <option value="fat_loss">Perder grasa</option>
+            <option value="maintain">Mantener</option>
+        </select>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <hr>
+
+    <form id="loginForm">
+        <h3>Login</h3>
+
+        <input type="text" id="loginUser" placeholder="Usuario" required>
+        <input type="password" id="loginPass" placeholder="Contraseña" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+</main>
+
+
+    <script src="js/auth.js"></script>
+ 
+</body>
+</html>
