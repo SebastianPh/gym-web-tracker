@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrenamiento - Gym Web Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Gym Web Tracker</h1>
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="entrenamiento.html">Entrenamiento</a>
+        <a href="coach.html">Coach</a>
+        <a href="progreso.html">Progreso</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+</header>
+
+<main>
+    <!-- META -->
+    <h2 id="trainingGoal">Meta: Ganar músculo</h2>
+
+    <!-- GRUPO MUSCULAR -->
+    <h3 id="trainingGroup">Espalda - Bíceps</h3>
+
+    <!-- FECHA Y HORA -->
+    <p id="trainingDate">
+        Día: <span id="day"></span> |
+        Hora inicio: <span id="startTime"></span>
+    </p>
+
+    <hr>
+
+    <!-- TABLA DE EJERCICIOS -->
+    <h3>Rutina del día</h3>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ejercicio</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <section id="exerciseDetail"></section>
+
+        <tbody id="exerciseList">
+            <!-- JS llenará esto -->
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- BOTÓN FINAL -->
+    <button id="finishTraining">
+        Entrenamiento terminado 💪
+    </button>
+</main>
+
+<script src="js/utils.js"></script>
+<script src="js/entrenamiento.js"></script>
+
+</body>
+</html>

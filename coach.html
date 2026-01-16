@@ -11,7 +11,7 @@
         <h1>Gym Web Tracker</h1>
         <nav>
             <a href="inicio.html">Inicio</a>
-            <a href="rutinas.html">Rutinas</a>
+            <a href="entrenamiento.html">Entrenamiento</a>
             <a href="coach.html">Coach</a>
             <a href="progreso.html">Progreso</a>
             <a href="perfil.html">Perfil</a>
@@ -23,6 +23,40 @@
     <main>
         <h2>Coach</h2>
         <p>Configuración de rutinas y ejercicios.</p>
+
+        <h2>Configurar Rutina</h2>
+
+<select id="dia">
+  <option value="lunes">Lunes</option>
+  <option value="martes">Martes</option>
+  <option value="miercoles">Miércoles</option>
+  <option value="jueves">Jueves</option>
+  <option value="viernes">Viernes</option>
+</select>
+
+<input type="text" id="grupo" placeholder="Grupo muscular">
+
+<textarea id="ejercicios" placeholder="Ejercicios separados por coma"></textarea>
+
+<button onclick="guardarRutina()">Guardar rutina</button>
+
+<h3>Rutinas configuradas</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Día</th>
+      <th>Grupo muscular</th>
+      <th>Ejercicios</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody id="tabla-rutinas"></tbody>
+</table>
+
+
+<script src="js/coach.js"></script>
+
     </main>
 
  <script src="js/utils.js"></script>
